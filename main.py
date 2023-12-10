@@ -14,7 +14,7 @@ TeluguZone = Client(
 )
 
 START_BUTTONS = [[
-    InlineKeyboardButton("JOIN MY UPDATES CHANNEL", url="hhtps://t.me/TeluguZone0")
+    InlineKeyboardButton("JOIN MY UPDATES CHANNEL", url="https://t.me/TeluguZone0")
 ]]
    
 
