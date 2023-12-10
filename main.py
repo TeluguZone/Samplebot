@@ -27,13 +27,12 @@ async def help_cmd(cleint, message):
 START_BUTTONS = [[
     InlineKeyboardButton("JOIN MY UPDATES CHANNEL", url="https://t.me/TeluguZone0")
 ]]
-
-@TeluguZone.on_message(filters.command("start"))
-async def start_cmd(client, message):
-    await message.reply_text(
-        text="You Have To Join My Channel To Use Me",
-        reply_markup=InlineKeyboardMarkup(START_BUTTONS)
-    )
+@TeluguZone.on_message(filters.command("start") & filters.incoming)
+async def start(client, message):
+    [[
+    InlineKeyboardButton("JOIN MY UPDATES CHANNEL", url="https://t.me/TeluguZone0")
+]]
+    
 
 print("Bot was Started")
 
