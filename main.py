@@ -25,6 +25,9 @@ async def start_cmd(client, message):
         text="You Have To Join My Channel To Use Me",
         reply_markup=InlineKeyboardMarkup(START_BUTTONS) 
     )
+@TeluguZone.on_message(filters.command("help"))
+async def help_cmd(cleint, message):
+    await message.reply_text("hi contact my father DaEmoN")
 
 print("Bot was Started")
 
