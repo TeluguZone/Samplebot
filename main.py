@@ -11,4 +11,9 @@ TeluguZone = Client(
     api_hash=API_HASH,
     bot_token=BOT_TOKEN
 )
+
+
+print("Bot was Started")
+
+TeluguZone.run()
   
