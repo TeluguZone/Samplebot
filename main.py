@@ -16,7 +16,7 @@ TeluguZone = Client(
 @TeluguZone.on_message(filters.command("start"))
 async def start_cmd(client, message):
     await message.reply_text("Hai 🤜,
-This is An Avdance and DaEmoN Bot)                             
+This is An Avdance and DaEmoN Bot")                             
 
 
 @TeluguZone.on_message(filters.command("help"))
