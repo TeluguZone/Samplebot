@@ -20,16 +20,17 @@ START_BUTTONS = [[
 
 
 @TeluguZone.on_message(filters.command("start"))
-async def start_cmd(client, message):
-    await message.reply_text(
-        text="You Have To Join My Channel To Use Me",
-        reply_markup=InlineKeyboardMarkup(START_BUTTONS) 
-    )
-@TeluguZone.on_message(filters.command("start"))
 async def start_cmd(cleint,message):
     await message.reply_photo(
         photo="https://graph.org/file/3dc0d36c2bab91936a26b.jpg",
-        caption="This Is A Advanced @Daemon990 Bot")
+        caption="This Is A Advanced @Daemon990 Bot") 
+    
+@TeluguZone.on_message(filters.command("start"))
+async def start_cmd(client, message):
+    await message.reply_text(
+        text="You Have To Join My Channel To Use Me",
+        reply_markup=InlineKeyboardMarkup(START_BUTTONS)
+    )
 
 
 @TeluguZone.on_message(filters.command("help"))
