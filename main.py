@@ -14,7 +14,7 @@ TeluguZone = Client(
 
 
 @Client.on_message(filters.command("start"))
-async def check_alive(_, message):
+async def main.py(_, message):
     await message.reply_text("This Is A Advanced daemon Bot")                             
 
 
