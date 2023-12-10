@@ -20,8 +20,7 @@ async def start_cmd(_, message):
 
 @TeluguZone.on_message(filters.command("help"))
 async def help_cmd(client, message):
-    await message.reply_text("Contact my father
- my father @Daemon90")                            
+    await message.reply_text("Contact my father my father @Daemon90")                            
 
 
 print("Bot was Started")
