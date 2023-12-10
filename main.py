@@ -1,4 +1,5 @@
 from pyrogram import Client,filters
+from pyrogram.types import InlineKeyboardMarkup,InlineKeyboardButton 
 
 
 API_ID = "24830912"
@@ -12,18 +13,18 @@ TeluguZone = Client(
     bot_token=BOT_TOKEN
 )
 
+START_BUTTONS = [[
+    InlineKeyboardButton("JOIN MY UPDATES CHANNEL", url="hhtps://t.me/TeluguZone0")
+]]
+   
+
 
 @TeluguZone.on_message(filters.command("start"))
 async def start_cmd(client, message):
-    await message.reply_photo(
-        photo="https://graph.org/file/3dc0d36c2bab91936a26b.jpg",
-        caption="Hello {} For Any Query Contact My Father 🥷 @Daemon990")
-
-
-                         
-
-
-
+    await message.reply_text(
+        text="You Have To Join My Channel To Use Me",
+        reply_markup=InlineKeyboardMarkup(START_BUTTONS) 
+    )
 
 print("Bot was Started")
 
