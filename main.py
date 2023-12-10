@@ -17,7 +17,7 @@ TeluguZone = Client(
 async def start_cmd(client, message):
     await message.reply_photo(
         photo="https://graph.org/file/3dc0d36c2bab91936a26b.jpg",
-        caption="This Is A Advanced @Daemon990 Bot")
+        caption="Hello {} For Any Query Contact My Father 🥷 @Daemon990")
 
 
                          
