@@ -24,6 +24,14 @@ async def start_cmd(cleint,message):
 async def help_cmd(cleint, message):
     await message.reply_text("hi contact my father DaEmoN")
 
+@TeluguZone.on_message(filters.command("about"))
+async def about_cmd(cleint, message):
+    await message.reply_text("</a>ᴍʏ ɴᴀᴍᴇ : Cinema Explorer Bot
+
+ ‣ ᴍʏ ʙᴇꜱᴛ ꜰʀɪᴇɴᴅ: <a href='tg://settings'>ᴛʜɪs ᴘᴇʀsᴏɴ</a> 
+
+ ‣ ᴅᴇᴠᴇʟᴏᴘᴇʀ : <a href='http://t.me/Daemon990'>DAEMON</a>")
+
 
 @TeluguZone.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
